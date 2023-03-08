@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "4caf6398-29b5-4167-b80a-84c98bf4cfbb",
+		"_postman_id": "794b2d61-aa50-448e-9ce1-4de8541960e4",
 		"name": "User Det",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25127233"
 	},
 	"item": [
 		{
@@ -11,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/getuser",
+					"raw": "http://localhost:8080/maamonoshatelecom/user/get",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -19,7 +20,8 @@
 					"port": "8080",
 					"path": [
 						"maamonoshatelecom",
-						"getuser"
+						"user",
+						"get"
 					]
 				}
 			},
@@ -32,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"mobile\":7407038247,\r\n    \"address\":\"xvcbghtj\"\r\n}",
+					"raw": "{\r\n    \"firstName\":\"Subhajit\",\r\n    \"lastName\":\"Mondal\",\r\n    \"mobile\":7894561238,\r\n    \"email\":\"subhajitmondal1984@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,7 +42,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/postuser",
+					"raw": "http://localhost:8080/maamonoshatelecom/user/save",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -48,7 +50,8 @@
 					"port": "8080",
 					"path": [
 						"maamonoshatelecom",
-						"postuser"
+						"user",
+						"save"
 					]
 				}
 			},

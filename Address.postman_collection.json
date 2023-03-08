@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "ab09edba-7d2c-41c8-91bc-07807bc62b34",
+		"name": "Address",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25127233"
+	},
+	"item": [
+		{
+			"name": "POST Address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"street\":\"36 Sarkar lane, Sreemani Bazar\",\r\n    \"city\":\"Kolkata\",\r\n\t\"state\":\"West Bengal\",\r\n\t\"country\":\"India\",\r\n\t\"zip_code\":700001,\r\n\t\"user_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/get",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/delete?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Address BY USER_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/ge",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"ge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Address BY USER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maamonoshatelecom/address/get-address-by-uid?userid=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"address",
+						"get-address-by-uid"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
