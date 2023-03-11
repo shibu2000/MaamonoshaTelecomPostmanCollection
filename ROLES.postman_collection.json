@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "72c6e4cf-90b7-4f29-babb-6c4154e80856",
+		"name": "ROLES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25127233"
+	},
+	"item": [
+		{
+			"name": "POST Roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/access-roles/add?name=ADMIN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"access-roles",
+						"add"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ADMIN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Role",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/access-roles/update?id=1&name=NORMAL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"access-roles",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "NORMAL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/access-roles/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"access-roles",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

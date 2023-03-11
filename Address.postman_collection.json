@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"street\":\"36 Sarkar lane, Sreemani Bazar\",\r\n    \"city\":\"Kolkata\",\r\n\t\"state\":\"West Bengal\",\r\n\t\"country\":\"India\",\r\n\t\"zip_code\":700001,\r\n\t\"user_id\":2\r\n}",
+					"raw": "{\r\n    \"street\":\"Murshidabad\",\r\n    \"city\":\"Murshidabad\",\r\n\t\"state\":\"West Bengal\",\r\n\t\"country\":\"India\",\r\n\t\"zip_code\":621232,\r\n\t\"user_id\":\"MMTU0000002\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

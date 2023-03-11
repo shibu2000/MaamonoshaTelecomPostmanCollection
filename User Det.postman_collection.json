@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\":\"Subhajit\",\r\n    \"lastName\":\"Mondal\",\r\n    \"mobile\":7894561238,\r\n    \"email\":\"subhajitmondal1984@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"firstName\":\"Subhajit\",\r\n    \"lastName\":\"Mondal\",\r\n    \"mobile\":7407038247,\r\n    \"email\":\"shibudhara11@gmail.com\",\r\n    \"password\":\"sdsfsdfsdfsdfAA\",\r\n    \"roles\":[\r\n        2\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,7 +63,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/deleteuser/1",
+					"raw": "http://localhost:8080/maamonoshatelecom/user/delete?id=MMTU0000002",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -71,8 +71,50 @@
 					"port": "8080",
 					"path": [
 						"maamonoshatelecom",
-						"deleteuser",
-						"1"
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "MMTU0000002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Shibu\",\r\n    \"lastName\":\"Dhara\",\r\n    \"mobile\":7407038247,\r\n    \"email\":\"shibudhara11@gmail.com\",\r\n    \"password\":\"sdsfsdfsdfsdfAA\",\r\n    \"roles\":[\r\n        1,\r\n        2\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/user/update?id=MMTU0000002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"user",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "MMTU0000002"
+						}
 					]
 				}
 			},

@@ -1,8 +1,10 @@
 {
 	"info": {
-		"_postman_id": "e2bfef2c-463f-4713-aba6-38116051474c",
+		"_postman_id": "decf8344-ce50-4761-8e9c-9835c3435f8b",
 		"name": "Category",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25127233"
 	},
 	"item": [
 		{
@@ -10,17 +12,8 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"categoryname\":\"MOBILE\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/category/savecategory",
+					"raw": "http://localhost:8080/maamonoshatelecom/category/save?category_name=Hardware",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -29,7 +22,13 @@
 					"path": [
 						"maamonoshatelecom",
 						"category",
-						"savecategory"
+						"save"
+					],
+					"query": [
+						{
+							"key": "category_name",
+							"value": "Hardware"
+						}
 					]
 				}
 			},
@@ -41,7 +40,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/category/getcategory",
+					"raw": "http://localhost:8080/maamonoshatelecom/category/get",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -50,7 +49,7 @@
 					"path": [
 						"maamonoshatelecom",
 						"category",
-						"getcategory"
+						"get"
 					]
 				}
 			},
@@ -62,7 +61,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/category/deletecategory?id=3",
+					"raw": "http://localhost:8080/maamonoshatelecom/category/delete?id=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -71,12 +70,12 @@
 					"path": [
 						"maamonoshatelecom",
 						"category",
-						"deletecategory"
+						"delete"
 					],
 					"query": [
 						{
 							"key": "id",
-							"value": "3"
+							"value": "2"
 						}
 					]
 				}
@@ -88,17 +87,8 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"categoryname\": \"H/W\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "http://localhost:8080/maamonoshatelecom/category/updatecategory",
+					"raw": "http://localhost:8080/maamonoshatelecom/category/updatecategory?id=1&category_name=Electronics",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -108,6 +98,16 @@
 						"maamonoshatelecom",
 						"category",
 						"updatecategory"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "category_name",
+							"value": "Electronics"
+						}
 					]
 				}
 			},
