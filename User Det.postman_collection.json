@@ -119,6 +119,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET User BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/user/get-user-byid?id=MMTU0000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"user",
+						"get-user-byid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "MMTU0000001"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
