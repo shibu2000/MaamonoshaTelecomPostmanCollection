@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "d52256c9-9917-46f9-97ff-4cb05e95787c",
+		"name": "ORDER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25127233"
+	},
+	"item": [
+		{
+			"name": "POST Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"MMTU0000001\",\r\n    \"shippingaddressID\":1,\r\n    \"billingAddressID\":1,\r\n    \"notes\":\"Cover The Face\",\r\n    \"productList\":{\r\n        \"1\":2,\r\n        \"2\":1\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CANCEL Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/cancel?order_id=ODR000000005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"cancel"
+					],
+					"query": [
+						{
+							"key": "order_id",
+							"value": "ODR000000005"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Order by User_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/get?user_id=MMTU0000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"get"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "MMTU0000001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET UserOrdersByDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/get-order-by-date?user_id=MMTU0000001&orderDate=2023-03-22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"get-order-by-date"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "MMTU0000001"
+						},
+						{
+							"key": "orderDate",
+							"value": "2023-03-22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Last Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/get-last-order?user_id=MMTU0000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"get-last-order"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "MMTU0000001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Last 3 Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maamonoshatelecom/order/get-last-3-order?user_id=MMTU0000001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maamonoshatelecom",
+						"order",
+						"get-last-3-order"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "MMTU0000001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

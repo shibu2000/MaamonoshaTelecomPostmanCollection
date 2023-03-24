@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\":\"Subhajit\",\r\n    \"lastName\":\"Mondal\",\r\n    \"mobile\":7407038247,\r\n    \"email\":\"shibudhara11@gmail.com\",\r\n    \"password\":\"sdsfsdfsdfsdfAA\",\r\n    \"roles\":[\r\n        2\r\n    ]\r\n}",
+					"raw": "{\r\n    \"firstName\":\"Shibu\",\r\n    \"lastName\":\"Dhara\",\r\n    \"mobile\":7407038247,\r\n    \"email\":\"shibudhara11@gmail.com\",\r\n    \"password\":\"sdsfsdfsdfsdfAA\",\r\n    \"roles\":[\r\n        1\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
